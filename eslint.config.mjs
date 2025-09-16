@@ -10,7 +10,7 @@ const compat = new FlatCompat({
 })
 
 const eslintConfig = [
-  ...compat.extends('next/core-web-vitals', 'next/typescript'),
+  ...compat.extends('next/core-web-vitals', 'next/typescript', 'prettier'),
   {
     ignores: [
       'node_modules/**',
@@ -20,6 +20,17 @@ const eslintConfig = [
       'next-env.d.ts',
     ],
   },
+  ...compat.config({
+    rules: {
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          argsIgnorePattern: '^_', // _로 시작하는 매개변수 무시
+          varsIgnorePattern: '^_', // _로 시작하는 변수 무시
+        },
+      ],
+    },
+  }),
 ]
 
 export default eslintConfig
