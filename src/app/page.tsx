@@ -1,7 +1,13 @@
+'use client'
+
+import { Button } from '@/components/ui/button'
+
 export default function Home() {
   return (
-    <div className="flex flex-1 items-center justify-center text-5xl">
-      Hello World!
+    <div className="flex flex-1 flex-col items-center justify-center gap-3 text-5xl">
+      <Button size="lg" onClick={() => alert('Hello World!')}>
+        Hello World!
+      </Button>
     </div>
   )
 }
