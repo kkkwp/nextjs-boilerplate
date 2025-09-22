@@ -32,7 +32,7 @@ Tailwind CSS v4와 shadcn/ui를 포함하여 빠르게 프로젝트를 시작할
 
 ### Installation
 ```bash
-git clone https://github.com/kkkwp/nextjs-boilerplate
+git clone https://github.com/kkkwp/nextjs-boilerplate.git
 cd boilerplate-nextjs
 pnpm install
 ```
