@@ -78,3 +78,12 @@ src/
 | `pnpm start` | Run production server   |
 | `pnpm lint`  | Run ESLint              |
 | `pnpm ui`    | Add shadcn/ui component |
+
+
+---
+
+## 📘 Guide
+
+👉 자세한 사용 가이드는 [GUIDE.md](./GUIDE.md)를 참고하세요.
+
+(컴포넌트 추가, Storage, Logger, 코드 품질 규칙, Tailwind/ESLint/Prettier 설정 등)
